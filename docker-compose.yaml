@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: ./.docker/config/Dockerfile
+    entrypoint: sh ./.docker/entrypoint.sh
     ports:
       - 3000:3000
     container_name: nest_alura
@@ -14,4 +15,3 @@ services:
       - nest_alura
 networks:
   nest_alura:
-    external: true
