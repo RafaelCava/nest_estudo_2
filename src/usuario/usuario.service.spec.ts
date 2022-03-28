@@ -15,4 +15,13 @@ describe('UsuarioService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined()
   })
+
+  it('should be return one user', () => {
+    const usuario = {
+      nome: 'rafael',
+      email: 'teste@teste.com'
+    }
+
+    expect(service.cria(usuario)).toBe(usuario)
+  })
 })

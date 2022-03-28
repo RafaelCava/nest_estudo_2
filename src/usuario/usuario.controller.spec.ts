@@ -17,4 +17,13 @@ describe('UsuarioController', () => {
   it('should be defined', () => {
     expect(controller).toBeDefined()
   })
+
+  it('should be return one user', () => {
+    const usuario = {
+      nome: 'rafael',
+      email: 'teste@teste.com'
+    }
+
+    expect(controller.cria(usuario)).toBe(usuario)
+  })
 })
