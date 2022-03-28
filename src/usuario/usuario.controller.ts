@@ -3,8 +3,6 @@ import { UsuarioService } from './usuario.service'
 
 @Controller('users')
 export class UsuarioController {
-  // private usuarios = []
-
   constructor(
     @Inject(UsuarioService)
     private readonly usuarioService: UsuarioService
