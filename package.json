@@ -1,10 +1,10 @@
 {
   "name": "alura-nest-2",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Aplicação de estudo da alura",
+  "author": "Rafael Cavalcante <ra.facavalcante@hotmail.com>",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
