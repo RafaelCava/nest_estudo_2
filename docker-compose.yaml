@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./.docker/config/Dockerfile
+    ports:
+      - 3000:3000
+    container_name: nest_alura
+    volumes:
+      - .:/home/node/app
+    networks:
+      - nest_alura
+networks:
+  nest_alura:
+    external: true
