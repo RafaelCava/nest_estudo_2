@@ -7,9 +7,14 @@ export class Usuario {
   @IsNotEmpty({
     message: 'O nome de usuário não pode ser vazio'
   })
-  @IsString()
+  @IsString({
+    message: 'O nome de usuário deve ser uma string'
+  })
   nomeDeUsuario: string
 
+  @IsNotEmpty({
+    message: 'O email não pode ser vazio'
+  })
   @IsEmail()
   email: string
 
