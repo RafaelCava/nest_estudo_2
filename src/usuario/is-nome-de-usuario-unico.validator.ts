@@ -1,3 +1,4 @@
+import { Inject, Injectable } from '@nestjs/common'
 import {
   registerDecorator,
   ValidationArguments,
@@ -5,19 +6,27 @@ import {
   ValidatorConstraint,
   ValidatorConstraintInterface
 } from 'class-validator'
+import { UsuarioService } from './usuario.service'
 
+@Injectable()
 @ValidatorConstraint()
-class IsNomeDeUsuarioUnicoConstraint implements ValidatorConstraintInterface {
+export class IsNomeDeUsuarioUnicoConstraint
+  implements ValidatorConstraintInterface
+{
+  constructor(
+    @Inject(UsuarioService)
+    private readonly usuarioService: UsuarioService
+  ) {}
   validate(
-    value: any,
+    nomeDeUsuario: string,
     validationArguments?: ValidationArguments
   ): boolean | Promise<boolean> {
-    throw new Error('Method not implemented.')
+    return !!!this.usuarioService.buscaPorNomeDeUsuario(nomeDeUsuario)
   }
 }
 
 export function IsNomeDeUsuarioUnico(validationOptions?: ValidationOptions) {
-  return function (object: ObjectConstructor, propertyName: string) {
+  return function (object: Object, propertyName: string) {
     registerDecorator({
       target: object.constructor,
       propertyName: propertyName,
