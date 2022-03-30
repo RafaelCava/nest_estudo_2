@@ -1,4 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing'
+import { Usuario } from './usuario.entity'
 import { UsuarioService } from './usuario.service'
 
 describe('UsuarioService', () => {
@@ -17,9 +18,13 @@ describe('UsuarioService', () => {
   })
 
   it('should be return one user', () => {
-    const usuario = {
-      nome: 'rafael',
-      email: 'teste@teste.com'
+    const usuario: Usuario = {
+      email: 'teste@teste.com',
+      dataDeEntrada: new Date(),
+      id: 3,
+      nomeCompleto: 'teste',
+      nomeDeUsuario: 'teste',
+      senha: 'teste'
     }
 
     expect(service.cria(usuario)).toBe(usuario)

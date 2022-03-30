@@ -1,5 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing'
 import { UsuarioController } from './usuario.controller'
+import { Usuario } from './usuario.entity'
 import { UsuarioService } from './usuario.service'
 
 describe('UsuarioController', () => {
@@ -19,9 +20,13 @@ describe('UsuarioController', () => {
   })
 
   it('should be return one user', () => {
-    const usuario = {
-      nome: 'rafael',
-      email: 'teste@teste.com'
+    const usuario: Usuario = {
+      dataDeEntrada: new Date(),
+      email: 'teste@teste.teste',
+      nomeDeUsuario: 'teste',
+      senha: 'teste',
+      nomeCompleto: 'teste',
+      id: 3
     }
 
     expect(controller.cria(usuario)).toBe(usuario)
