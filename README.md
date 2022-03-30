@@ -9,19 +9,19 @@
 <h1 align="center">Alura Nest 2</h1>
 
 <p align="center">
-  <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/RafaelCava/alura-nest-2?color=56BEB8">
+  <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/RafaelCava/nest_estudo_2?color=56BEB8">
 
-  <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/RafaelCava/alura-nest-2?color=56BEB8">
+  <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/RafaelCava/nest_estudo_2?color=56BEB8">
 
-  <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/RafaelCava/alura-nest-2?color=56BEB8">
+  <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/RafaelCava/nest_estudo_2?color=56BEB8">
 
-  <img alt="Licença" src="https://img.shields.io/github/license/RafaelCava/alura-nest-2?color=56BEB8">
+  <img alt="Licença" src="https://img.shields.io/github/license/RafaelCava/nest_estudo_2?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/RafaelCava/alura-nest-2?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/RafaelCava/nest_estudo_2?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/RafaelCava/alura-nest-2?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/RafaelCava/nest_estudo_2?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/RafaelCava/alura-nest-2?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/RafaelCava/nest_estudo_2?color=56BEB8" /> -->
 </p>
 
 <!-- Status -->
@@ -72,10 +72,10 @@ Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.co
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/RafaelCava/alura-nest-2
+$ git clone https://github.com/RafaelCava/nest_estudo_2
 
 # Entre na pasta
-$ cd alura-nest-2
+$ cd nest_estudo_2
 
 # Instale as dependências
 $ yarn
